@@ -59,6 +59,7 @@ p {
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 0.9rem;
+    line-height: 1.2rem;
     color: hsl(228, 12%, 48%);
     margin-bottom: 0;
 }
