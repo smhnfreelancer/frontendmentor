@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&display=swap');
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
     background-color: hsl(30, 38%, 92%);
 }
@@ -30,15 +34,12 @@ main {
     display: flex;
     flex-direction: column;
     width: 345px;
-    margin: 0 auto;
 }
 
 @media screen and (min-width:1440px) {
     main {
         display: flex;
         flex-direction: row;
-        margin-left: auto;
-        margin-right: auto;
         margin-top: 25vh;
         width: 600px;
     }
@@ -134,11 +135,16 @@ button {
     padding-bottom: 1rem;
 }
 
-button a {
+button {
     display: flex;
     vertical-align: baseline;
     color: white;
     text-decoration: none;
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
 }
 
 button svg {
