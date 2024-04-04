@@ -1,8 +1,10 @@
+@import url('https://fonts.google.com/specimen/Figtree:wght@500;800');
+
 :root {
   --Yellow: #f4d04e;
   --Black: #111111;
   --Pure-White: #ffffff;
-  --Gray: #7f7f7f;
+  --Grey: #7f7f7f;
 }
 
 body {
@@ -69,6 +71,11 @@ main {
   display: flex;
   margin-top: 0;
   margin-bottom: 12px;
+  font-family: 'Figtree';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 30px;
 }
 
 .author {
@@ -78,10 +85,21 @@ main {
 .desc {
   margin-top: 0;
   margin-bottom: 24px;
+  color: var(--Grey);
+  font-family: 'Figtree';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
 }
 
 .auth-name {
   display: flex;
   align-items: center;
   padding-left: 12px;
+  font-family: 'Figtree';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
 }
