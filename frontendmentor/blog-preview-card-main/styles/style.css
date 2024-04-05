@@ -120,6 +120,11 @@ main {
 .auth-img {
   width: 32px;
 }
+@media screen and (min-width: 375px) {
+  .card {
+    width: 327px;
+  }
+}
 
 @media screen and (min-width: 400px) {
   .card {
