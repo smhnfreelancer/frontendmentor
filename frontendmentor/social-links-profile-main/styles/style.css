@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --Black: #141414;
+  --DarkGrey: #1f1f1f;
+  --Grey: #333333;
+  --NeonGreen: #c3fb2a;
+  --White: #ffffff;
+}
+
+body {
+  background-color: var(--Black);
+  color: var(--White);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--DarkGrey);
+  padding: 24px;
+}
+
+.card__image {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+
+.card__name {
+  margin: 0;
+  font-family: 'Inter';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 4px;
+}
+
+.card__location {
+  margin: 0;
+  color: var(--NeonGreen);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 24px;
+}
+
+.card__title {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 24px;
+}
+
+.card__social {
+  display: contents;
+  list-style: none;
+}
+
+.card__social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--Grey);
+  align-self: stretch;
+  font-family: 'Inter';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 16px;
+}
+
+.card__social__item:hover {
+  background-color: var(--NeonGreen);
+  color: var(--Grey);
+  cursor: url('../assets/images/handcursor.png'), auto;
+}
+
+@media screen and (min-width: 375px) {
+  .card {
+    padding: 40px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--NeonGreen);
+}
