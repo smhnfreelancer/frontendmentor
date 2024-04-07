@@ -1,0 +1,41 @@
+:root {
+  --Eggshell: #f3e5d7;
+  --BrandyRed: #854632;
+  --DarkCharcoal: #312e2c;
+  --DarkRaspberry: #7a284e;
+  --Snow: #fff7fb;
+  --WengeBrown: #5f564d;
+  --White: #ffffff;
+  --WhiteCoffee: #e3ddd7;
+}
+
+body {
+  background-color: var(--Eggshell);
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--White);
+}
+
+.card__img {
+  display: flex;
+}
+
+.card__content {
+  padding: 40px;
+}
+
+.card__content__title {
+}
+
+.card__content__desc {
+}
+
+.card__content__prep {
+  background-color: var(--Snow);
+  padding: 24px;
+}
