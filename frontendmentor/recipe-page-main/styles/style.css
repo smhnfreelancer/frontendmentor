@@ -45,7 +45,10 @@ main {
 }
 
 .card__content {
-  padding: 40px;
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  padding-right: 32px;
 }
 
 .card__content__intro {
