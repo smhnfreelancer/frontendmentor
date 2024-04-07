@@ -13,10 +13,13 @@
 }
 
 body {
+  margin: 0;
+}
+
+main {
   background-color: var(--Eggshell);
   display: flex;
   flex-direction: column;
-  margin: 0;
 }
 
 .attribution {
@@ -24,7 +27,7 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--BrandyRed);
 }
 
 .card {
@@ -71,6 +74,7 @@ body {
   background-color: var(--Snow);
   padding: 24px;
   margin-bottom: 32px;
+  border-radius: 12px;
 }
 
 .card__content__prep__title {
@@ -227,4 +231,27 @@ body {
 }
 
 .card__nutrition__table {
+}
+
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    border-radius: 24px;
+    padding: 40px;
+    width: 736px;
+  }
+  main {
+    justify-content: center;
+    align-items: center;
+    padding-top: 124px;
+  }
+  .card__img {
+    border-radius: 12px;
+  }
+  footer {
+    padding-top: 124px;
+    background-color: var(--Eggshell);
+  }
 }
