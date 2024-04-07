@@ -153,6 +153,12 @@ body {
   font-size: 10px;
 }
 
+.card__instruction {
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid var(--WhiteCoffee);
+}
+
 .card__instruction__title {
   margin: 0;
   color: var(--BrandyRed);
@@ -196,4 +202,29 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+}
+
+.card__nutrition__title {
+  margin: 0;
+  margin-bottom: 24px;
+  color: var(--BrandyRed);
+  font-family: 'Young Serif';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.card__nutrition__text {
+  color: var(--WengeBrown);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.card__nutrition__table {
 }
