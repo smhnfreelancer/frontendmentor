@@ -41,7 +41,7 @@ main {
 }
 
 .card__content {
-  padding: 40px;
+  padding-top: 40px;
 }
 
 .card__content__intro {
