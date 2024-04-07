@@ -231,11 +231,63 @@ main {
 }
 
 .card__nutrition__table {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.card__nutrition__table__item {
+  display: flex;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--WhiteCoffee);
+  flex-basis: 50%;
 }
 
-@media screen and (min-width: 375px) {
+.card__nutrition__table__item--first {
+  flex-basis: 50%;
+  color: var(--WengeBrown);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-left: 30px;
 }
 
+.card__nutrition__table__item--second {
+  color: var(--BrandyRed);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  padding-right: 30px;
+}
+
+@media screen and (min-width: 500px) {
+  main {
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+  }
+  .card {
+    width: 80vw;
+    border-radius: 24px;
+  }
+
+  footer {
+    padding-top: 60px;
+    background-color: var(--Eggshell);
+  }
+}
+@media screen and (min-width: 800px) {
+  .card {
+    padding: 40px;
+  }
+  .card__img {
+    border-radius: 12px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .card {
     border-radius: 24px;
