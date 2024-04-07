@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
 :root {
   --Eggshell: #f3e5d7;
   --BrandyRed: #854632;
@@ -13,6 +16,15 @@ body {
   background-color: var(--Eggshell);
   display: flex;
   flex-direction: column;
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 .card {
@@ -29,13 +41,113 @@ body {
   padding: 40px;
 }
 
-.card__content__title {
+.card__content__intro {
+  margin: 0;
+  margin-bottom: 32px;
 }
 
-.card__content__desc {
+.card__content__intro__title {
+  margin: 0;
+  margin-bottom: 24px;
+  color: var(--DarkCharcoal);
+  font-family: 'Young Serif';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.card__content__intro__desc {
+  margin: 0;
+  color: var(--WengeBrown);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .card__content__prep {
   background-color: var(--Snow);
   padding: 24px;
+  margin-bottom: 32px;
+}
+
+.card__content__prep__title {
+  color: var(--DarkRaspberry);
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: 'Outfit';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.card__content__prep__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 24px;
+  color: var(--WengeBrown);
+}
+
+.card__content__prep__list__item {
+  font-family: 'Outfit';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.card__content__prep__list__item::marker {
+  color: var(--DarkRaspberry);
+  font-size: 10px;
+}
+
+.card__content__prep__list__item strong {
+  padding: 0;
+  font-family: 'Outfit';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.card__ingr {
+  padding: 0;
+  margin: 0;
+}
+
+.card_ingr__title {
+  margin: 0;
+  color: var(--BrandyRed);
+  font-family: 'Young Serif';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.card__ingr__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--WhiteCoffee);
+}
+
+.card__ingr__list__item {
+  padding-left: 16px;
+  color: var(--Wenge-Brown);
+  font-family: 'Outfit';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.card__ingr__list__item::marker {
+  color: var(--BrandyRed);
+  font-size: 10px;
 }

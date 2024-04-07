@@ -14,16 +14,6 @@
 
     <title>Frontend Mentor | Recipe page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
@@ -35,14 +25,16 @@
           class="card__img"
         />
         <div class="card__content">
-          <h1 class="card__content__title">Simple Omelette Recipe</h1>
-          <p class="card__content__desc">
-            An easy and quick dish, perfect for any meal. This classic omelette
-            combines beaten eggs cooked to perfection, optionally filled with
-            your choice of cheese, vegetables, or meats.
-          </p>
+          <div class="card__content__intro">
+            <h1 class="card__content__intro__title">Simple Omelette Recipe</h1>
+            <p class="card__content__intro__desc">
+              An easy and quick dish, perfect for any meal. This classic
+              omelette combines beaten eggs cooked to perfection, optionally
+              filled with your choice of cheese, vegetables, or meats.
+            </p>
+          </div>
           <div class="card__content__prep">
-            <h3 class="card__content__prep__heading">Preparation time</h3>
+            <h3 class="card__content__prep__title">Preparation time</h3>
             <ul class="card__content__prep__list">
               <li class="card__content__prep__list__item">
                 <strong>Total:</strong> Approximately 10 minutes
@@ -57,12 +49,14 @@
           </div>
           <div class="card__ingr">
             <h3 class="card_ingr__title">Ingredients</h3>
-            <ul>
-              <li>2-3 large eggs</li>
-              <li>Salt, to taste</li>
-              <li>Pepper, to taste</li>
-              <li>1 tablespoon of butter or oil</li>
-              <li>
+            <ul class="card__ingr__list">
+              <li class="card__ingr__list__item">2-3 large eggs</li>
+              <li class="card__ingr__list__item">Salt, to taste</li>
+              <li class="card__ingr__list__item">Pepper, to taste</li>
+              <li class="card__ingr__list__item">
+                1 tablespoon of butter or oil
+              </li>
+              <li class="card__ingr__list__item">
                 Optional fillings: cheese, diced vegetables, cooked meats, herbs
               </li>
             </ul>
@@ -102,26 +96,26 @@
           </div>
           <div class="card__nutrition">
             <h3 class="card__nutrition__title">Nutrition</h3>
-            <p>
+            <p class="card__nutrition__text">
               The table below shows nutritional values per serving without the
               additional fillings.
             </p>
-            <table>
+            <table class="card__nutrition__table">
               <tr>
-                <td>Calories</td>
-                <td>277kcal</td>
+                <td class="card__nutrition__table--first">Calories</td>
+                <td class="card__nutrition__table--second">277kcal</td>
               </tr>
               <tr>
-                <td>Carbs</td>
-                <td>0g</td>
+                <td class="card__nutrition__table--first">Carbs</td>
+                <td class="card__nutrition__table--second">0g</td>
               </tr>
               <tr>
-                <td>Protein</td>
-                <td>20g</td>
+                <td class="card__nutrition__table--first">Protein</td>
+                <td class="card__nutrition__table--second">20g</td>
               </tr>
               <tr>
-                <td>Fat</td>
-                <td>22g</td>
+                <td class="card__nutrition__table--first">Fat</td>
+                <td class="card__nutrition__table--second">22g</td>
               </tr>
             </table>
           </div>
