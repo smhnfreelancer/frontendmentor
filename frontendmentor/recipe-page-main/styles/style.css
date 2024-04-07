@@ -116,6 +116,7 @@ body {
 .card__ingr {
   padding: 0;
   margin: 0;
+  margin-bottom: 32px;
 }
 
 .card_ingr__title {
@@ -150,4 +151,49 @@ body {
 .card__ingr__list__item::marker {
   color: var(--BrandyRed);
   font-size: 10px;
+}
+
+.card__instruction__title {
+  margin: 0;
+  color: var(--BrandyRed);
+  font-family: 'Young Serif';
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.card__instruction__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 24px;
+}
+
+.card__instruction__list__item {
+  padding-left: 16px;
+  color: var(--WengeBrown);
+  font-family: 'Outfit';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.card__instruction__list__item strong {
+  color: var(--WengeBrown);
+  font-family: 'Outfit';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.card__instruction__list__item::marker {
+  color: var(--BrandyRed);
+  font-family: 'Outfit';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 }
