@@ -12,6 +12,10 @@
   --WhiteCoffee: #e3ddd7;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
