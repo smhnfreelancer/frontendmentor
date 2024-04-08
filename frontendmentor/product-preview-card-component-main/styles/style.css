@@ -51,17 +51,17 @@ small {
 }
 
 h1 {
-    font-family: 'Fraunces';
-    line-height: 1.9rem;
+  font-family: 'Fraunces';
+  line-height: 1.9rem;
 }
 
 p {
-    font-family: 'Montserrat';
-    font-weight: 500;
-    font-size: 0.9rem;
-    line-height: 1.3rem;
-    color: hsl(228, 12%, 48%);
-    margin-bottom: 0;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 0;
 }
 
 .picture-wrapper {
@@ -139,7 +139,7 @@ button {
 
 button:hover {
   background-color: hsl(212, 21%, 14%);
-  cursor: pointer;
+  cursor: url('../images/Pointer.png'), auto;
 }
 
 button svg {
@@ -163,13 +163,15 @@ button svg {
 .prc-disc {
   margin-left: 1rem;
   font-family: 'Montserrat';
-  font-size: 1.2rem;
+  font-style: normal;
+  font-size: 0.8rem;
   font-weight: 500;
   color: hsl(228, 12%, 48%);
   text-decoration: line-through;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
   vertical-align: 5px;
+  line-height: 23px;
 }
 
 footer {
