@@ -155,6 +155,9 @@ main {
 }
 
 @media screen and (min-width: 1170px) {
+  .intro {
+    padding-top: 80px;
+  }
   .card {
     height: 250px;
     width: 350px;
@@ -171,7 +174,6 @@ main {
     font-weight: 200;
     line-height: normal;
     letter-spacing: 0.25px;
-    padding-top: 80px;
   }
   .intro__title {
     color: #4d4f62;
