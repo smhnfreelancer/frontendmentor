@@ -163,4 +163,15 @@ main {
     flex-direction: row;
     align-items: center;
   }
+  .intro__pretitle {
+    font-size: 36px;
+    letter-spacing: 0.25px;
+  }
+  .intro__title {
+    font-size: 36px;
+    letter-spacing: 0.25px;
+  }
+  .intro__text {
+    width: 540px;
+  }
 }
