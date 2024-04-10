@@ -169,11 +169,11 @@ main {
   .card {
     width: 350px;
     height: 250px;
-    padding: 32px;
   }
-  .cards-container {
+  .card__container {
     flex-direction: row;
     align-items: center;
+    padding: 32px;
   }
   .intro__pretitle {
     color: #4d4f62;
