@@ -164,12 +164,24 @@ main {
     align-items: center;
   }
   .intro__pretitle {
+    color: #4d4f62;
+    font-family: 'Poppins';
     font-size: 36px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
     letter-spacing: 0.25px;
   }
   .intro__title {
+    color: #4d4f62;
+    text-align: center;
+    font-family: 'Poppins';
     font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
     letter-spacing: 0.25px;
+    margin-bottom: 13px;
   }
   .intro__text {
     width: 540px;
