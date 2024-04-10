@@ -62,7 +62,7 @@ main {
   padding: 0;
 }
 
-.cards-container {
+.cards-wrapper {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -170,9 +170,11 @@ main {
     width: 350px;
     height: 250px;
   }
-  .card__container {
+  .cards-wrapper {
     flex-direction: row;
     align-items: center;
+  }
+  .card__container {
     padding: 32px;
   }
   .intro__pretitle {
