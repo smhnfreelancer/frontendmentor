@@ -201,6 +201,9 @@ main {
   .intro__text {
     width: 540px;
   }
+  .card__container__title {
+    margin-bottom: 6px;
+  }
   .card__container__img {
     width: 64px;
   }
