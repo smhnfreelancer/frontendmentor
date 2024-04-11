@@ -174,8 +174,8 @@ main {
   }
   .card__heading {
     font-size: 20px;
-    font-weight: 600px;
-    margin-bottom: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
   }
 }
 
