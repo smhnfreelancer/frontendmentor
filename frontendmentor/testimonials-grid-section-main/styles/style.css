@@ -102,7 +102,7 @@ main {
   color: #ffffff;
 }
 .card--first .card__heading {
-  margin-bottom: ;
+  margin-bottom: 16px;
 }
 .card--first .card__text {
   color: #cfcfcf;
@@ -138,8 +138,8 @@ main {
 @media screen and (min-width: 1440px) {
   main {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 46% 45%;
     grid-gap: 24px 30px;
     padding: 165px;
   }
