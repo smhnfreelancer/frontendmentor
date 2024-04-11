@@ -138,10 +138,12 @@ main {
 @media screen and (min-width: 1440px) {
   main {
     display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
-    grid-template-rows: 46% 45%;
+    grid-template-columns: 255px 255px 255px 255px;
+    grid-template-rows: 282px 266px;
     grid-gap: 24px 30px;
     padding: 165px;
+    justify-content: center;
+    align-content: center;
   }
   .card--first {
     grid-column-start: 1;
@@ -173,5 +175,14 @@ main {
     font-size: 20px;
     font-weight: 600px;
     margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 50%);
+    grid-gap: 24px 30px;
   }
 }
