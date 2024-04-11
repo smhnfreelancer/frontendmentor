@@ -1,7 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background: #ecf2f8;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 10px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #733fc8;
+}
+
+main {
+  display: grid;
+  gap: 24px;
+  padding: 71px 24px;
+}
+
+.card {
+  padding: 32px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+}
+
+.card__profile {
+  display: flex;
+}
+
+.card__profile__img {
+  align-self: flex-start;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.card__profile__author {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+  margin-bottom: 18px;
+}
+
+.card__profile__author__name {
+  margin: 0;
+  margin-bottom: 4px;
+  color: #48556a;
+  font-family: 'Barlow Semi Condensed';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px; /* 100% */
+}
+
+.card__profile__author__title {
+  margin: 0;
+  color: #48556a;
+  font-family: 'Barlow Semi Condensed';
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11px; /* 100% */
+  opacity: 0.5;
+}
+
+.card__heading {
+  color: #48556a;
+  font-family: 'Barlow Semi Condensed';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.card__text {
+  color: #48556a;
+  font-family: 'Barlow Semi Condensed';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 138.462% */
+  opacity: 0.7;
+}
+
+.card--first {
+  background-color: #733fc8;
+  background-image: url('../images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-position-x: 85%;
+  background-size: 102px 102px;
+}
+
+.card--first .card__profile__author__name,
+.card--first .card__profile__author__title,
+.card--first .card__heading {
+  color: #ffffff;
+}
+.card--first .card__heading {
+  margin-bottom: ;
+}
+.card--first .card__text {
+  color: #cfcfcf;
+}
+
+.card--second {
+  background-color: #48556a;
+}
+
+.card--second .card__profile__author__name,
+.card--second .card__profile__author__title,
+.card--second .card__heading,
+.card--second .card__text {
+  color: #ffffff;
+}
+
+.card--forth {
+  background-color: #19202d;
+}
+.card--forth .card__profile__img {
+  border: 2px solid #733fc8;
+}
+
+.card--forth .card__profile__author__name,
+.card--forth .card__profile__author__title,
+.card--forth .card__text {
+  color: #ffffff;
+}
+.card--forth .card__heading {
+  color: #ecf2f8;
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 24px 30px;
+    padding: 165px;
+  }
+  .card--first {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .card--second {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  .card--third {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .card--forth {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .card--fifth {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .card__heading {
+    font-size: 20px;
+    font-weight: 600px;
+    margin-bottom: 24px;
+  }
 }
