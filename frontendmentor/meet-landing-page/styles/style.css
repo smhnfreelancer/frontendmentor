@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+  background-color: #fafafa;
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.meet-logo {
+  align-self: center;
+  width: 119px;
+  height: 28px;
+  margin-top: 48px;
+  margin-bottom: 54px;
+}
+
+.hero {
+  overflow-x: clip;
+  margin-bottom: 48px;
+}
+
+.hero__img {
+  width: 105vw;
+  object-position: -20px;
+}
+
+.content__title {
+  display: flex;
+  justify-content: center;
+  color: #28283d;
+  font-family: 'Red Hat Display';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 44px;
+}
+
+.content__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 24px 24px 24px;
+}
+
+.content__text {
+  color: #87879d;
+  text-align: center;
+  font-family: 'Red Hat Display';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 0 24px 32px 24px;
+}
+
+.content__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__buttons__download {
+  color: #fff;
+  background-color: #4d96a9;
+  font-family: 'Red Hat Display';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px; /* 162.5% */
+  width: 193px;
+  height: 58px;
+  border-radius: 29px;
+  margin-bottom: 16px;
+  border: 0;
+}
+.content__buttons__download--version {
+  color: #8fe3f9;
+}
+
+.content__buttons__what {
+  color: #fff;
+  background-color: #855fb1;
+  border: 0;
+  width: 139px;
+  height: 58px;
+  border-radius: 29px;
+}
