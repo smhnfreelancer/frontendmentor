@@ -352,9 +352,11 @@ main {
 
   .hero__imgright {
     object-position: 25px;
+    align-self: flex-start;
   }
   .hero__imgleft {
     object-position: -25px;
+    align-self: flex-start;
   }
   .content--tablet {
     display: none;
