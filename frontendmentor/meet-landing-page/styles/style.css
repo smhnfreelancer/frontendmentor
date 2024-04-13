@@ -423,6 +423,7 @@ main {
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
+    width: 40vw;
   }
 
   .footer {
