@@ -331,6 +331,7 @@ main {
 
   .footer__text {
     align-self: center;
+    font-size: 16px;
     width: 79vw;
     margin-bottom: 40px;
   }
@@ -453,7 +454,7 @@ main {
     width: 26vw;
     color: #fafafa;
     font-family: 'Red Hat Display';
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 26px; /* 144.444% */
