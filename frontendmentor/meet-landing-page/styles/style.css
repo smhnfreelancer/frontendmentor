@@ -370,6 +370,7 @@ main {
     font-style: normal;
     font-weight: 900;
     line-height: 64px;
+    margin: 0 0 24px 0;
   }
 
   .content__text {
@@ -380,6 +381,8 @@ main {
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
+    width: 37vw;
+    margin: 0 0 32px 0;
   }
 
   .hero--desktop {
