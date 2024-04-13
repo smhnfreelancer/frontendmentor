@@ -350,6 +350,12 @@ main {
     display: none;
   }
 
+  .hero__imgright {
+    object-position: 25px;
+  }
+  .hero__imgleft {
+    object-position: -25px;
+  }
   .content--tablet {
     display: none;
   }
