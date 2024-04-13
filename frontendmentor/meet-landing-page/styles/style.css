@@ -31,6 +31,10 @@ main {
   object-position: -20px;
 }
 
+.hero--desktop {
+  display: none;
+}
+
 .content__title {
   display: flex;
   justify-content: center;
@@ -269,7 +273,7 @@ main {
 
 @media screen and (min-width: 768px) {
   .content {
-    width: 457px;
+    width: 66vw;
     align-self: center;
   }
   .content__buttons {
@@ -289,7 +293,92 @@ main {
     margin-bottom: 48px;
   }
   .desc {
-    width: 573px;
+    width: 80vw;
     align-self: center;
+  }
+  .footer {
+    background: linear-gradient(
+        0deg,
+        rgba(77, 150, 169, 0.9),
+        rgba(77, 150, 169, 0.9)
+      ),
+      url('../assets/tablet/image-footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .footer__text {
+    align-self: center;
+    width: 79vw;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .pics img {
+    width: 255px;
+    height: 242px;
+  }
+  .hero--tablet {
+    display: none;
+  }
+
+  .content--tablet {
+    display: none;
+  }
+  .hero--desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content--desktop {
+    display: flex;
+    flex-direction: column;
+    width: 36vw;
+  }
+  .hero__imgleft {
+    justify-self: start;
+  }
+  .desc {
+    width: 37vw;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(
+        0deg,
+        rgba(77, 150, 169, 0.9),
+        rgba(77, 150, 169, 0.9)
+      ),
+      url('../assets/desktop/image-footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 116px;
+    padding-bottom: 116px;
+  }
+  .footer__title {
+    text-align: left;
+    margin: 0;
+  }
+  .footer__text {
+    margin: 0;
+    text-align: left;
+    width: 24vw;
+    color: #fafafa;
+    font-family: 'Red Hat Display';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 144.444% */
+  }
+  .footer__buttons__download {
+    margin: 0;
   }
 }
