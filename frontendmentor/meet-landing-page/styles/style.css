@@ -86,6 +86,12 @@ main {
   margin-bottom: 16px;
   border: 0;
 }
+
+.content__buttons__download:hover {
+  background-color: #71c0d4;
+  cursor: url('../assets/Pointer.png'), auto;
+}
+
 .content__buttons__download--version {
   color: #8fe3f9;
 }
@@ -103,6 +109,11 @@ main {
   font-style: normal;
   font-weight: 900;
   line-height: 26px;
+}
+
+.content__buttons__what:hover {
+  background-color: #b18bdd;
+  cursor: url('../assets/Pointer.png'), auto;
 }
 
 .numwrapper {
@@ -265,6 +276,11 @@ main {
   line-height: 26px; /* 162.5% */
 }
 
+.footer__buttons__download:hover {
+  background-color: #b18bdd;
+  cursor: url('../assets/Pointer.png'), auto;
+}
+
 .attribution {
   color: #fff;
   margin: 0;
@@ -321,6 +337,10 @@ main {
 }
 
 @media screen and (min-width: 1440px) {
+  .meet-logo {
+    margin-bottom: 108px;
+  }
+
   .pics img {
     width: 255px;
     height: 242px;
@@ -372,6 +392,26 @@ main {
     width: 37vw;
   }
 
+  .desc__slogan {
+    color: #28283d;
+    text-align: center;
+    font-family: 'Red Hat Display';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 44px;
+  }
+
+  .desc__text {
+    color: #87879d;
+    text-align: center;
+    font-family: 'Red Hat Display';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
   .footer {
     display: flex;
     flex-direction: row;
@@ -406,9 +446,5 @@ main {
   }
   .footer__buttons__download {
     margin: 0;
-  }
-  .footer__buttons__download:hover {
-    background-color: #b18bdd;
-    cursor: url('../assets/Pointer.png'), auto;
   }
 }
