@@ -370,7 +370,7 @@ main {
   .footer__text {
     margin: 0;
     text-align: left;
-    width: 24vw;
+    width: 26vw;
     color: #fafafa;
     font-family: 'Red Hat Display';
     font-size: 18px;
@@ -380,5 +380,9 @@ main {
   }
   .footer__buttons__download {
     margin: 0;
+  }
+  .footer__buttons__download:hover {
+    background-color: #b18bdd;
+    cursor: url('../assets/Pointer.png'), auto;
   }
 }
