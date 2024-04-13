@@ -98,6 +98,11 @@ main {
   height: 58px;
   border-radius: 29px;
   margin-bottom: 64px;
+  font-family: 'Red Hat Display';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px;
 }
 
 .numwrapper {
@@ -327,6 +332,27 @@ main {
   .content--tablet {
     display: none;
   }
+
+  .content__title {
+    color: #28283d;
+    text-align: center;
+    font-family: 'Red Hat Display';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 64px;
+  }
+
+  .content__text {
+    color: #87879d;
+    text-align: center;
+    font-family: 'Red Hat Display';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+  }
+
   .hero--desktop {
     display: flex;
     flex-direction: row;
