@@ -356,6 +356,7 @@ main {
   }
   .hero__imgleft {
     object-position: -25px;
+    margin-top: -25px;
     align-self: flex-start;
   }
   .content--tablet {
