@@ -24,6 +24,7 @@ module.exports = {
         DesaturatedDarkBlue: 'hsl(214, 17%, 51%)',
         GrayishBlue: 'hsl(212, 23%, 69%)',
         LightGrayishBlue: 'hsl(210, 46%, 95%)',
+        boxShadow: 'rgba(201, 213, 225, 0.50)',
       },
       fontFamily: {
         sans: ['Manrope', 'sans-serif'],
