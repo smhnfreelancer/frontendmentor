@@ -11,34 +11,132 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Frontend Mentor | Article preview component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
-  <body>
-    Shift the overall look and feel by adding these wonderful touches to
-    furniture in your home Ever been in a room and felt like something was
-    missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple
-    tips to help you make any room feel complete. Michelle Appleton 28 Jun 2020
-    Share
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+  <body
+    class="bg-LightGrayishBlue m-0 flex h-screen flex-col items-center justify-center font-sans"
+  >
+    <!-- Card Container -->
+    <div class="m-6 flex flex-col rounded-xl bg-white md:flex-row">
+      <!-- Image Container -->
+      <div class="flex">
+        <img
+          src="./images/drawers.jpg"
+          alt=""
+          class="h-56 w-full rounded-t-xl object-cover object-top md:rounded-l-xl"
+        />
+      </div>
+      <!-- Content Container -->
+      <div class="flex flex-col pt-8 md:flex-col">
+        <!-- Content Text -->
+        <div class="flex flex-col px-8">
+          <h1
+            class="text-VeryDarkGrayishBlue text-md mt-1 text-base font-bold leading-6"
+          >
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h1>
+          <p
+            class="text-DesaturatedDarkBlue mt-3 text-left text-sm font-medium leading-6"
+          >
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+        <!-- Content Footer  -->
+        <div class="mt-4">
+          <!-- Profile and Share -->
+          <div
+            class="flex flex-row justify-between px-8 pb-4 pt-4 transition-all duration-200"
+            id="profile"
+          >
+            <!-- Profile Contianer -->
+            <div>
+              <div class="flex flex-row space-x-4">
+                <img
+                  src="./images/avatar-michelle.jpg"
+                  alt=""
+                  class="h-10 w-10 rounded-full"
+                />
+                <div class="flex flex-col">
+                  <span class="text-VeryDarkGrayishBlue font-bold leading-5"
+                    >Michelle Appleton</span
+                  >
+                  <span class="text-GrayishBlue mt-0 leading-5"
+                    >28 Jun 2020</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Share Icon -->
+            <a href="#" id="share">
+              <div
+                class="bg-LightGrayishBlue flex h-10 w-10 items-center justify-center rounded-full"
+              >
+                <img src="./images/icon-share.svg" alt="" class="" />
+              </div>
+            </a>
+          </div>
+          <!-- Social Media and Share  -->
+          <div
+            id="socialicons"
+            class="bg-VeryDarkGrayishBlue flex hidden flex-row justify-between rounded-b-xl px-8 pb-4 pt-4 transition-all duration-200"
+          >
+            <div class="flex flex-row space-x-5">
+              <span
+                class="text-GrayishBlue self-center text-base uppercase tracking-[5px]"
+                >Share</span
+              >
+              <img
+                src="./images/icon-facebook.svg"
+                alt=""
+                class="h-6 w-6 self-center"
+              />
+              <img
+                src="./images/icon-twitter.svg"
+                alt=""
+                class="h-6 w-6 self-center"
+              />
+              <img
+                src="./images/icon-pinterest.svg"
+                alt=""
+                class="h-6 w-6 self-center"
+              />
+            </div>
+            <a href="#" id="socialiconslink">
+              <div
+                class="bg-DesaturatedDarkBlue flex h-10 w-10 items-center justify-center rounded-full text-white"
+              >
+                <img src="./images/icon-share2.svg" alt="" class="" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="text-DesaturatedDarkBlue mt-auto text-center text-xs">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        class="text-VeryDarkGrayishBlue"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/smhnfreelancer"
+        class="text-VeryDarkGrayishBlue"
+        >@smhnfreelancer</a
+      >.
+    </div>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
