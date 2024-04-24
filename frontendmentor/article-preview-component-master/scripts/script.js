@@ -1,17 +1,41 @@
-const share = document.getElementById('share');
-const socialicons = document.getElementById('socialicons');
-const socialiconslink = document.getElementById('socialiconslink');
-const profile = document.getElementById('profile');
+const shareButton = document.getElementById('share');
+const socialIcons = document.getElementById('socialicons');
+const socialIconsLink = document.getElementById('socialiconslink');
+const profileSection = document.getElementById('profile');
+const socialIconsFloat = document.getElementById('socialiconsfloat');
 
 function toggleShare(e) {
-  e.currentTarget.parentElement.classList.add('hidden');
-  socialicons.classList.remove('hidden');
+  console.log(window.innerWidth);
+  if (window.innerWidth < 768) {
+    e.currentTarget.parentElement.parentElement.classList.add('hidden');
+    socialIcons.classList.remove('hidden');
+  } else {
+    if (socialIconsFloat.classList.contains('hidden')) {
+      socialIconsFloat.classList.remove('hidden');
+      shareButton.querySelector('div').classList.remove('bg-LightGrayishBlue');
+      shareButton.querySelector('div').classList.add('bg-DesaturatedDarkBlue');
+      shareButton
+        .querySelector('div')
+        .querySelector('img')
+        .setAttribute('src', './images/icon-share2.svg');
+    } else {
+      socialIconsFloat.classList.add('hidden');
+      shareButton
+        .querySelector('div')
+        .classList.remove('bg-DesaturatedDarkBlue');
+      shareButton.querySelector('div').classList.add('bg-LightGrayishBlue');
+      shareButton
+        .querySelector('div')
+        .querySelector('img')
+        .setAttribute('src', './images/icon-share.svg');
+    }
+  }
 }
 
 function toggleProfile(e) {
   e.currentTarget.parentElement.classList.add('hidden');
-  profile.classList.remove('hidden');
+  profileSection.classList.remove('hidden');
 }
 
-share.addEventListener('click', toggleShare);
-socialiconslink.addEventListener('click', toggleProfile);
+shareButton.addEventListener('click', toggleShare);
+socialIconsLink.addEventListener('click', toggleProfile);
