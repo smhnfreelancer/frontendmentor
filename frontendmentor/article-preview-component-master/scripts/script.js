@@ -11,25 +11,31 @@ function toggleShare(e) {
     socialIcons.classList.remove('hidden');
   } else {
     if (socialIconsFloat.classList.contains('hidden')) {
-      socialIconsFloat.classList.remove('hidden');
-      shareButton.querySelector('div').classList.remove('bg-LightGrayishBlue');
-      shareButton.querySelector('div').classList.add('bg-DesaturatedDarkBlue');
-      shareButton
-        .querySelector('div')
-        .querySelector('img')
-        .setAttribute('src', './images/icon-share2.svg');
+      showFloatIcons();
     } else {
-      socialIconsFloat.classList.add('hidden');
-      shareButton
-        .querySelector('div')
-        .classList.remove('bg-DesaturatedDarkBlue');
-      shareButton.querySelector('div').classList.add('bg-LightGrayishBlue');
-      shareButton
-        .querySelector('div')
-        .querySelector('img')
-        .setAttribute('src', './images/icon-share.svg');
+      hideFloatIcons();
     }
   }
+}
+
+function showFloatIcons() {
+  socialIconsFloat.classList.remove('hidden');
+  shareButton.querySelector('div').classList.remove('bg-LightGrayishBlue');
+  shareButton.querySelector('div').classList.add('bg-DesaturatedDarkBlue');
+  shareButton
+    .querySelector('div')
+    .querySelector('img')
+    .setAttribute('src', './images/icon-share2.svg');
+}
+
+function hideFloatIcons() {
+  socialIconsFloat.classList.add('hidden');
+  shareButton.querySelector('div').classList.remove('bg-DesaturatedDarkBlue');
+  shareButton.querySelector('div').classList.add('bg-LightGrayishBlue');
+  shareButton
+    .querySelector('div')
+    .querySelector('img')
+    .setAttribute('src', './images/icon-share.svg');
 }
 
 function toggleProfile(e) {
