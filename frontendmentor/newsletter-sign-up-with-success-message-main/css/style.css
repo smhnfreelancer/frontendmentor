@@ -842,12 +842,20 @@ video {
     width: 100vw;
   }
 
+  .lg\:w-full {
+    width: 100%;
+  }
+
   .lg\:min-w-\[504px\] {
     min-width: 504px;
   }
 
   .lg\:max-w-\[928px\] {
     max-width: 928px;
+  }
+
+  .lg\:max-w-none {
+    max-width: none;
   }
 
   .lg\:flex-row {
