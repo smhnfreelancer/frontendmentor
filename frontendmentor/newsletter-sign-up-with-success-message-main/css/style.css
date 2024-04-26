@@ -553,3 +553,31 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+.container {
+  width: 100%;
+}
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 976px) {
+  .container {
+    max-width: 976px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
