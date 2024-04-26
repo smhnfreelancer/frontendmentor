@@ -652,6 +652,19 @@ video {
   opacity: 0.5;
 }
 
+.email-input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.email-error {
+  --tw-border-opacity: 1;
+  border-color: hsl(4 100% 67% / var(--tw-border-opacity));
+  background-color: rgba(255, 97, 85, 0.15);
+  --tw-text-opacity: 1;
+  color: hsl(4 100% 67% / var(--tw-text-opacity));
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -720,19 +733,6 @@ video {
   border-radius: 36px;
 }
 
-.border {
-  border-width: 1px;
-}
-
-.border-Tomato {
-  --tw-border-opacity: 1;
-  border-color: hsl(4 100% 67% / var(--tw-border-opacity));
-}
-
-.bg-ErrorBG {
-  background-color: rgba(255, 97, 85, 0.15);
-}
-
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -799,14 +799,14 @@ video {
   color: hsl(4 100% 67% / var(--tw-text-opacity));
 }
 
-.focus\:border-Tomato:focus {
-  --tw-border-opacity: 1;
-  border-color: hsl(4 100% 67% / var(--tw-border-opacity));
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-.focus\:outline-none:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
+.duration-150 {
+  transition-duration: 150ms;
 }
 
 @media (min-width: 976px) {

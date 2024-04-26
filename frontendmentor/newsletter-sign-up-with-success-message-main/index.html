@@ -30,7 +30,8 @@
       class="lg:flex lg:h-screen lg:w-screen lg:flex-col lg:items-center lg:justify-center"
     >
       <div
-        class="flex flex-col items-center justify-center rounded-[36px] lg:max-w-[928px] lg:flex-row lg:bg-white"
+        class="flex flex-col items-center justify-center rounded-[36px] transition-all duration-150 lg:max-w-[928px] lg:flex-row lg:bg-white"
+        id="mainPage"
       >
         <img
           src="./assets/images/illustration-sign-up-mobile.svg"
@@ -73,8 +74,8 @@
               type="email"
               name="email"
               placeholder="email@company.com"
-              class="email-input focus:outline-none"
-              id="emailInput "
+              class="email-input"
+              id="emailInput"
             />
             <button class="subscribe-btn">
               Subscribe to monthly newsletter
@@ -91,7 +92,8 @@
 
       <!-- Success message start -->
       <div
-        class="flex hidden flex-col items-center lg:max-h-[520px] lg:min-w-[504px] lg:rounded-[36px] lg:bg-white"
+        class="flex hidden flex-col items-center transition-all duration-150 lg:max-h-[520px] lg:min-w-[504px] lg:rounded-[36px] lg:bg-white"
+        id="thankPage"
       >
         <div
           class="flex h-screen max-w-sm flex-col justify-between px-6 py-10 lg:px-0 lg:pb-16 lg:pt-12"
@@ -118,7 +120,7 @@
             </p>
           </div>
           <div class="mt-auto flex">
-            <button class="dismiss-btn">Dismiss message</button>
+            <button class="dismiss-btn" id="dismissBtn">Dismiss message</button>
           </div>
         </div>
       </div>

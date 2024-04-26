@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./*.html'],
+  safelist: ['email-error'],
   theme: {
     screens: {
       sm: '375px',
