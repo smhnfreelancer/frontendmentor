@@ -810,6 +810,11 @@ video {
 }
 
 @media (min-width: 976px) {
+  .lg\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   .lg\:mr-9 {
     margin-right: 2.25rem;
   }
