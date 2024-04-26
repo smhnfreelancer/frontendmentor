@@ -28,7 +28,7 @@ function validateEmail(mail) {
     return 'Email is required';
   }
 
-  if (!/\S+@\S+\.\S+/.test(mail)) {
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail)) {
     return 'Please enter a valid email';
   }
   return '';
