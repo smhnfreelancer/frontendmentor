@@ -16,6 +16,7 @@ module.exports = {
         Grey: 'hsl(231, 7%, 60%)',
         White: 'hsl(0, 0%, 100%)',
         Grey25: 'hsla(243, 28%, 13%, 0.25)',
+        ErrorBG: 'rgba(255, 97, 85, 0.15)',
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
@@ -23,4 +24,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

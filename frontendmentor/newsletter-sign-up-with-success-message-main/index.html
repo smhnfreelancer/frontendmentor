@@ -21,17 +21,6 @@
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="lg:bg-DarkSlateGrey">
@@ -66,14 +55,26 @@
             <li class="UL__item">Measuring to ensure updates are a success</li>
             <li class="UL__item">And much more!</li>
           </ul>
-          <form action="" class="mt-10 flex flex-col">
-            <label for="" class="text-base font-bold text-DarkSlateGrey"
-              >Email address</label
-            >
+          <form
+            action=""
+            class="mt-10 flex flex-col"
+            id="subscribeForm"
+            novalidate
+          >
+            <label
+              for="email"
+              class="inline-flex justify-between text-base font-bold text-DarkSlateGrey"
+              >Email address<span
+                class="text-base font-bold text-Tomato"
+                id="validationMessage"
+              ></span
+            ></label>
             <input
               type="email"
+              name="email"
               placeholder="email@company.com"
-              class="email-input"
+              class="email-input focus:outline-none"
+              id="emailInput "
             />
             <button class="subscribe-btn">
               Subscribe to monthly newsletter
@@ -139,5 +140,7 @@
         >.
       </div>
     </main>
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
