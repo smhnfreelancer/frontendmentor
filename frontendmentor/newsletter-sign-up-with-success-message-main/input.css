@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .UL {
+    @apply mt-6 list-item list-none font-sans text-base text-DarkSlateGrey;
+  }
+
+  .UL__item {
+    background: url('../assets/images/icon-list.svg');
+    background-repeat: no-repeat;
+    background-position: left 2px;
+    padding-left: calc(21px + 16px);
+    padding-bottom: 10px;
+  }
+  .dismiss-btn {
+    @apply mt-6 flex-grow rounded-lg bg-DarkSlateGrey px-10 py-4 text-base font-bold text-white;
+    cursor: url('../assets/images/hand-cursor.png'), auto;
+  }
+  .dismiss-btn:hover {
+    background: linear-gradient(
+      204deg,
+      rgba(255, 106, 58, 1) 0%,
+      rgba(255, 82, 123, 1) 100%
+    );
+    box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+  }
+  .subscribe-btn {
+    @apply mt-6 rounded-lg bg-DarkSlateGrey px-10 py-4 text-base font-bold text-white;
+    cursor: url('../assets/images/hand-cursor.png'), auto;
+  }
+  .subscribe-btn:hover {
+    background: linear-gradient(
+      204deg,
+      rgba(255, 106, 58, 1) 0%,
+      rgba(255, 82, 123, 1) 100%
+    );
+    box-shadow: 0px 16px 32px 0px rgba(255, 97, 85, 0.5);
+  }
+  .email-input {
+    @apply rounded-lg border border-Grey25 border-opacity-50 px-6 py-4 text-base font-normal placeholder:text-DarkSlateGrey placeholder:opacity-50  focus:outline-none;
+  }
+  .email-error {
+    @apply bg-ErrorBG border-Tomato text-Tomato;
+  }
+}
