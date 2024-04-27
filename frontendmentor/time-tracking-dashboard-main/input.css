@@ -13,4 +13,9 @@
     background-repeat: no-repeat;
     background-position: 93% -4%;
   }
+  .study-card {
+    background: url('../images/icon-study.svg');
+    background-repeat: no-repeat;
+    background-position: 93% -5%;
+  }
 }

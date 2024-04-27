@@ -566,6 +566,17 @@ video {
   background-position: 93% -4%;
 }
 
+.study-card {
+  background: url('../images/icon-study.svg');
+  background-repeat: no-repeat;
+  background-position: 93% -5%;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -588,6 +599,10 @@ video {
 
 .w-16 {
   width: 4rem;
+}
+
+.w-screen {
+  width: 100vw;
 }
 
 .max-w-\[327px\] {
@@ -658,6 +673,11 @@ video {
 .bg-DarkBlue {
   --tw-bg-opacity: 1;
   background-color: hsl(235 46% 20% / var(--tw-bg-opacity));
+}
+
+.bg-LightRedStudy {
+  --tw-bg-opacity: 1;
+  background-color: hsl(348 100% 68% / var(--tw-bg-opacity));
 }
 
 .bg-LightRedWork {
