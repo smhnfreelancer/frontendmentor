@@ -36,184 +36,232 @@
 
   <body class="bg-VeryDarkBlue">
     <!-- Grid Wrapper -->
-    <main class="mx-auto grid w-screen gap-6 font-sans">
-      <!-- Profile name -->
-      <div class="bg-DarkBlue max-w-[327px] rounded-b-[15px]">
-        <div class="bg-Blue flex flex-row rounded-[15px] p-8">
-          <img
-            src="./images/image-jeremy.png"
-            alt=""
-            class="mr-3 h-16 w-16 rounded-full border-[3px] border-white"
-          />
-          <div class="flex flex-col self-center">
-            <span class="text-PaleBlue text-[15px] font-normal leading-normal"
-              >Report for</span
-            >
-            <span class="mt-0 text-[24px] font-light leading-normal text-white"
-              >Jeremy Robson</span
-            >
-          </div>
-        </div>
-        <ul class="text-DesaturatedBlue flex flex-row justify-around p-6">
-          <li class="hover:text-white">Daily</li>
-          <li class="hover:text-white">Weekly</li>
-          <li class="hover:text-white">Monthly</li>
-        </ul>
-      </div>
-
-      <!-- Card Container -->
-      <!-- daily -->
+    <main class="my-auto block">
+      <!-- Grid -->
       <div
-        class="bg-LightRedWork work-card max-w-[327px] rounded-b-[15px] rounded-t-[15px] pt-10"
+        class="mx-auto mt-[80px] grid justify-center gap-6 font-sans md:grid-cols-4 lg:mt-0 lg:max-w-[1120px]"
       >
-        <div class="bg-DarkBlue rounded-[15px] rounded-b-[13px] px-6 py-9">
-          <div class="flex flex-row justify-between">
-            <span class="text-[18px] font-normal leading-normal text-white"
-              >Work</span
-            >
-            <span class="self-center"
-              ><img src="./images/icon-ellipsis.svg" alt=""
-            /></span>
+        <!-- Profile name -->
+        <div
+          class="max-w-[327px] rounded-b-[20px] bg-DarkBlue md:row-span-2 md:max-w-[255px]"
+        >
+          <div class="flex flex-row rounded-[15px] bg-Blue p-8 md:flex-col">
+            <img
+              src="./images/image-jeremy.png"
+              alt=""
+              class="mr-3 h-16 w-16 rounded-full border-[3px] border-white"
+            />
+            <div class="flex flex-col self-center">
+              <span class="text-[15px] font-normal leading-normal text-PaleBlue"
+                >Report for</span
+              >
+              <span
+                class="mt-0 text-[24px] font-light leading-normal text-white"
+                >Jeremy Robson</span
+              >
+            </div>
           </div>
-          <div class="flex flex-row justify-between">
-            <span class="text-[32px] font-normal leading-normal text-white"
-              >5hrs</span
+          <ul
+            class="flex flex-row justify-around p-6 text-DesaturatedBlue md:flex-col"
+          >
+            <li class="hover:text-white">Daily</li>
+            <li class="hover:text-white">Weekly</li>
+            <li class="hover:text-white">Monthly</li>
+          </ul>
+        </div>
+
+        <!-- Card Container -->
+        <!-- daily -->
+        <div
+          class="work-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-10 md:max-w-[255px]"
+        >
+          <div
+            class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9"
+          >
+            <div class="flex flex-row justify-between">
+              <span class="text-[18px] font-normal leading-normal text-white"
+                >Work</span
+              >
+              <span class="self-center"
+                ><img src="./images/icon-ellipsis.svg" alt=""
+              /></span>
+            </div>
+            <div
+              class="flex flex-row flex-wrap justify-between md:flex-col md:justify-start"
             >
-            <span
-              class="text-PaleBlue self-center text-[15px] font-normal leading-normal"
-              >Previous - 7hrs</span
+              <span class="text-[32px] font-normal leading-normal text-white"
+                >5hrs</span
+              >
+              <span
+                class="self-center text-[15px] font-normal leading-normal text-PaleBlue md:self-start"
+                >Previous - 7hrs</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="play-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-10 md:max-w-[255px]"
+        >
+          <div
+            class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9"
+          >
+            <div class="flex flex-row justify-between">
+              <span class="text-[18px] font-normal leading-normal text-white"
+                >Play</span
+              >
+              <span class="self-center"
+                ><img src="./images/icon-ellipsis.svg" alt=""
+              /></span>
+            </div>
+            <div
+              class="flex flex-row flex-wrap justify-between md:flex-col md:justify-start"
             >
+              <span class="text-[32px] font-normal leading-normal text-white"
+                >32hrs</span
+              >
+              <span
+                class="self-center text-[15px] font-normal leading-normal text-PaleBlue md:self-start"
+                >Previous - 36hrs</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="study-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-10 md:max-w-[255px]"
+        >
+          <div
+            class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9"
+          >
+            <div class="flex flex-row justify-between">
+              <span class="text-[18px] font-normal leading-normal text-white"
+                >Study</span
+              >
+              <span class="self-center"
+                ><img src="./images/icon-ellipsis.svg" alt=""
+              /></span>
+            </div>
+            <div
+              class="flex flex-row flex-wrap justify-between md:flex-col md:justify-start"
+            >
+              <span class="text-[32px] font-normal leading-normal text-white"
+                >32hrs</span
+              >
+              <span
+                class="self-center text-[15px] font-normal leading-normal text-PaleBlue md:self-start"
+                >Previous - 36hrs</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="excercise-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-10 md:max-w-[255px]"
+        >
+          <div
+            class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9"
+          >
+            <div class="flex flex-row justify-between">
+              <span class="text-[18px] font-normal leading-normal text-white"
+                >Exercise</span
+              >
+              <span class="self-center"
+                ><img src="./images/icon-ellipsis.svg" alt=""
+              /></span>
+            </div>
+            <div
+              class="flex flex-row flex-wrap justify-between md:flex-col md:justify-start"
+            >
+              <span class="text-[32px] font-normal leading-normal text-white"
+                >23hrs</span
+              >
+              <span
+                class="self-center text-[15px] font-normal leading-normal text-PaleBlue md:self-start"
+                >Previous - 29hrs</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="social-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-10 md:max-w-[255px]"
+        >
+          <div
+            class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9"
+          >
+            <div class="flex flex-row justify-between">
+              <span class="text-[18px] font-normal leading-normal text-white"
+                >Social</span
+              >
+              <span class="self-center"
+                ><img src="./images/icon-ellipsis.svg" alt=""
+              /></span>
+            </div>
+            <div
+              class="flex h-full flex-row flex-wrap justify-between md:flex-col md:justify-start"
+            >
+              <span class="text-[32px] font-normal leading-normal text-white"
+                >4hrs</span
+              >
+              <span
+                class="self-center text-[15px] font-normal leading-normal text-PaleBlue md:self-start"
+                >Previous - 19hrs</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="selfcare-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-10 md:max-w-[255px]"
+        >
+          <div
+            class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9"
+          >
+            <div class="flex flex-row justify-between">
+              <span class="text-[18px] font-normal leading-normal text-white"
+                >Self Care</span
+              >
+              <span class="self-center"
+                ><img src="./images/icon-ellipsis.svg" alt=""
+              /></span>
+            </div>
+            <div
+              class="flex flex-row flex-wrap justify-between md:flex-col md:justify-start"
+            >
+              <span class="text-[32px] font-normal leading-normal text-white"
+                >2hrs</span
+              >
+              <span
+                class="self-center text-[15px] font-normal leading-normal text-PaleBlue md:self-start"
+                >Previous - 2hrs</span
+              >
+            </div>
           </div>
         </div>
       </div>
-
       <div
-        class="bg-SoftBluePlay play-card max-w-[327px] rounded-b-[15px] rounded-t-[15px] pt-10"
+        class="mt-2 flex flex-col justify-center text-center text-xs text-Blue lg:mt-5"
       >
-        <div class="bg-DarkBlue rounded-[15px] rounded-b-[13px] px-6 py-9">
-          <div class="flex flex-row justify-between">
-            <span class="text-[18px] font-normal leading-normal text-white"
-              >Play</span
-            >
-            <span class="self-center"
-              ><img src="./images/icon-ellipsis.svg" alt=""
-            /></span>
-          </div>
-          <div class="flex flex-row justify-between">
-            <span class="text-[32px] font-normal leading-normal text-white"
-              >32hrs</span
-            >
-            <span
-              class="text-PaleBlue self-center text-[15px] font-normal leading-normal"
-              >Previous - 36hrs</span
-            >
-          </div>
-        </div>
+        <span class=""
+          >Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            class="text-LightRedWork"
+          >
+            Frontend Mentor</a
+          >.</span
+        >
+        <span
+          >Coded by
+          <a
+            href="https://www.frontendmentor.io/profile/smhnfreelancer"
+            class="text-LightRedWork"
+            >@smhnfreelancer</a
+          >.
+        </span>
       </div>
-
-      <div
-        class="bg-LightRedStudy study-card max-w-[327px] rounded-b-[15px] rounded-t-[15px] pt-10"
-      >
-        <div class="bg-DarkBlue rounded-[15px] rounded-b-[13px] px-6 py-9">
-          <div class="flex flex-row justify-between">
-            <span class="text-[18px] font-normal leading-normal text-white"
-              >Study</span
-            >
-            <span class="self-center"
-              ><img src="./images/icon-ellipsis.svg" alt=""
-            /></span>
-          </div>
-          <div class="flex flex-row justify-between">
-            <span class="text-[32px] font-normal leading-normal text-white"
-              >32hrs</span
-            >
-            <span
-              class="text-PaleBlue self-center text-[15px] font-normal leading-normal"
-              >Previous - 36hrs</span
-            >
-          </div>
-        </div>
-      </div>
-      <!-- daily -->
-
-      <!-- weekly -->
-
-      <!-- weekly -->
-      103hrs
-      <!-- monthly -->
-      Previous - 128hrs
-      <!-- monthly -->
-
-      Play 1hr
-      <!-- daily -->
-      Previous - 2hrs
-      <!-- daily -->
-      10hrs
-      <!-- weekly -->
-      Previous - 8hrs
-      <!-- weekly -->
-      23hrs
-      <!-- monthly -->
-      Previous - 29hrs
-      <!-- monthly -->
-
-      Study 0hrs
-      <!-- daily -->
-      Previous - 1hr
-      <!-- daily -->
-      4hrs
-      <!-- weekly -->
-      Previous - 7hrs
-      <!-- weekly -->
-      13hrs
-      <!-- monthly -->
-      Previous - 19hrs
-      <!-- monthly -->
-
-      Exercise 1hr
-      <!-- daily -->
-      Previous - 1hr
-      <!-- daily -->
-      4hrs
-      <!-- weekly -->
-      Previous - 5hrs
-      <!-- weekly -->
-      11hrs
-      <!-- monthly -->
-      Previous - 18hrs
-      <!-- monthly -->
-
-      Social 1hr
-      <!-- daily -->
-      Previous - 3hrs
-      <!-- daily -->
-      5hrs
-      <!-- weekly -->
-      Previous - 10hrs
-      <!-- weekly -->
-      21hrs
-      <!-- monthly -->
-      Previous - 23hrs
-      <!-- monthly -->
-
-      Self Care 0hrs
-      <!-- daily -->
-      Previous - 1hr
-      <!-- daily -->
-      2hrs
-      <!-- weekly -->
-      Previous - 2hrs
-      <!-- weekly -->
-      7hrs
-      <!-- monthly -->
-      Previous - 11hrs
-      <!-- monthly -->
     </main>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
   </body>
 </html>

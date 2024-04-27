@@ -555,26 +555,61 @@ video {
 }
 
 .work-card {
-  background: url('../images/icon-work.svg');
+  --tw-bg-opacity: 1;
+  background-color: hsl(15 100% 70% / var(--tw-bg-opacity));
+  background-image: url('../images/icon-work.svg');
   background-repeat: no-repeat;
   background-position: 93% -10%;
 }
 
 .play-card {
-  background: url('../images/icon-play.svg');
+  --tw-bg-opacity: 1;
+  background-color: hsl(195 74% 62% / var(--tw-bg-opacity));
+  background-image: url('../images/icon-play.svg');
   background-repeat: no-repeat;
   background-position: 93% -4%;
 }
 
 .study-card {
-  background: url('../images/icon-study.svg');
+  --tw-bg-opacity: 1;
+  background-color: hsl(348 100% 68% / var(--tw-bg-opacity));
+  background-image: url('../images/icon-study.svg');
   background-repeat: no-repeat;
   background-position: 93% -5%;
+}
+
+.excercise-card {
+  --tw-bg-opacity: 1;
+  background-color: hsl(145 58% 55% / var(--tw-bg-opacity));
+  background-image: url('../images/icon-exercise.svg');
+  background-repeat: no-repeat;
+  background-position: 93% 0%;
+}
+
+.social-card {
+  --tw-bg-opacity: 1;
+  background-color: hsl(264 64% 52% / var(--tw-bg-opacity));
+  background-image: url('../images/icon-social.svg');
+  background-repeat: no-repeat;
+  background-position: 93% -15%;
+}
+
+.selfcare-card {
+  --tw-bg-opacity: 1;
+  background-color: hsl(43 84% 65% / var(--tw-bg-opacity));
+  background-image: url('../images/icon-self-care.svg');
+  background-repeat: no-repeat;
+  background-position: 93% -8%;
 }
 
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mr-3 {
@@ -583,6 +618,18 @@ video {
 
 .mt-0 {
   margin-top: 0px;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-\[80px\] {
+  margin-top: 80px;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -597,12 +644,20 @@ video {
   height: 4rem;
 }
 
-.w-16 {
-  width: 4rem;
+.h-full {
+  height: 100%;
 }
 
-.w-screen {
-  width: 100vw;
+.h-screen {
+  height: 100vh;
+}
+
+.h-4\/5 {
+  height: 80%;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .max-w-\[327px\] {
@@ -615,6 +670,14 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -646,9 +709,9 @@ video {
   border-bottom-left-radius: 13px;
 }
 
-.rounded-b-\[15px\] {
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+.rounded-b-\[20px\] {
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .rounded-t-\[15px\] {
@@ -673,21 +736,6 @@ video {
 .bg-DarkBlue {
   --tw-bg-opacity: 1;
   background-color: hsl(235 46% 20% / var(--tw-bg-opacity));
-}
-
-.bg-LightRedStudy {
-  --tw-bg-opacity: 1;
-  background-color: hsl(348 100% 68% / var(--tw-bg-opacity));
-}
-
-.bg-LightRedWork {
-  --tw-bg-opacity: 1;
-  background-color: hsl(15 100% 70% / var(--tw-bg-opacity));
-}
-
-.bg-SoftBluePlay {
-  --tw-bg-opacity: 1;
-  background-color: hsl(195 74% 62% / var(--tw-bg-opacity));
 }
 
 .bg-VeryDarkBlue {
@@ -717,6 +765,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-sans {
   font-family: Rubik, sans-serif;
 }
@@ -737,6 +789,11 @@ video {
   font-size: 32px;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -749,9 +806,19 @@ video {
   line-height: 1.5;
 }
 
+.text-Blue {
+  --tw-text-opacity: 1;
+  color: hsl(246 80% 60% / var(--tw-text-opacity));
+}
+
 .text-DesaturatedBlue {
   --tw-text-opacity: 1;
   color: hsl(235 45% 61% / var(--tw-text-opacity));
+}
+
+.text-LightRedWork {
+  --tw-text-opacity: 1;
+  color: hsl(15 100% 70% / var(--tw-text-opacity));
 }
 
 .text-PaleBlue {
@@ -767,4 +834,44 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:row-span-2 {
+    grid-row: span 2 / span 2;
+  }
+
+  .md\:max-w-\[255px\] {
+    max-width: 255px;
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .md\:self-start {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 976px) {
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:max-w-\[1120px\] {
+    max-width: 1120px;
+  }
 }

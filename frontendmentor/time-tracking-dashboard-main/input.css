@@ -3,19 +3,42 @@
 @tailwind utilities;
 
 @layer components {
+  .card {
+  }
   .work-card {
-    background: url('../images/icon-work.svg');
+    @apply bg-LightRedWork;
+    background-image: url('../images/icon-work.svg');
     background-repeat: no-repeat;
     background-position: 93% -10%;
   }
   .play-card {
-    background: url('../images/icon-play.svg');
+    @apply bg-SoftBluePlay;
+    background-image: url('../images/icon-play.svg');
     background-repeat: no-repeat;
     background-position: 93% -4%;
   }
   .study-card {
-    background: url('../images/icon-study.svg');
+    @apply bg-LightRedStudy;
+    background-image: url('../images/icon-study.svg');
     background-repeat: no-repeat;
     background-position: 93% -5%;
+  }
+  .excercise-card {
+    @apply bg-LimeGreenExercise;
+    background-image: url('../images/icon-exercise.svg');
+    background-repeat: no-repeat;
+    background-position: 93% 0%;
+  }
+  .social-card {
+    @apply bg-VioletSocial;
+    background-image: url('../images/icon-social.svg');
+    background-repeat: no-repeat;
+    background-position: 93% -15%;
+  }
+  .selfcare-card {
+    @apply bg-SoftOrangeSelfcare;
+    background-image: url('../images/icon-self-care.svg');
+    background-repeat: no-repeat;
+    background-position: 93% -8%;
   }
 }
