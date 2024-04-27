@@ -27,22 +27,94 @@
         font-size: 11px;
         text-align: center;
       }
+
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
     </style>
   </head>
-  <body>
+
+  <body class="bg-VeryDarkBlue">
     <!-- Grid Wrapper -->
-    <main>
+    <main class="grid gap-6 font-sans">
       <!-- Profile name -->
-      <div>Report for Jeremy Robson Daily Weekly Monthly Work 5hrs</div>
+      <div class="bg-DarkBlue max-w-[327px] rounded-b-[15px]">
+        <div class="bg-Blue flex flex-row rounded-[15px] p-8">
+          <img
+            src="./images/image-jeremy.png"
+            alt=""
+            class="mr-3 h-16 w-16 rounded-full border-[3px] border-white"
+          />
+          <div class="flex flex-col self-center">
+            <span class="text-PaleBlue text-[15px] font-normal leading-normal"
+              >Report for</span
+            >
+            <span class="mt-0 text-[24px] font-light leading-normal text-white"
+              >Jeremy Robson</span
+            >
+          </div>
+        </div>
+        <ul class="text-DesaturatedBlue flex flex-row justify-around p-6">
+          <li class="hover:text-white">Daily</li>
+          <li class="hover:text-white">Weekly</li>
+          <li class="hover:text-white">Monthly</li>
+        </ul>
+      </div>
+
+      <!-- Card Container -->
       <!-- daily -->
-      Previous - 7hrs
+      <div
+        class="bg-LightRedWork work-card max-w-[327px] rounded-b-[15px] rounded-t-[15px] pt-10"
+      >
+        <div class="bg-DarkBlue rounded-[15px] rounded-b-[13px] px-6 py-9">
+          <div class="flex flex-row justify-between">
+            <span class="text-[18px] font-normal leading-normal text-white"
+              >Work</span
+            >
+            <span class="self-center"
+              ><img src="./images/icon-ellipsis.svg" alt=""
+            /></span>
+          </div>
+          <div class="flex flex-row justify-between">
+            <span class="text-[32px] font-normal leading-normal text-white"
+              >5hrs</span
+            >
+            <span
+              class="text-PaleBlue self-center text-[15px] font-normal leading-normal"
+              >Previous - 7hrs</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-SoftBluePlay play-card max-w-[327px] rounded-b-[15px] rounded-t-[15px] pt-10"
+      >
+        <div class="bg-DarkBlue rounded-[15px] rounded-b-[13px] px-6 py-9">
+          <div class="flex flex-row justify-between">
+            <span class="text-[18px] font-normal leading-normal text-white"
+              >Play</span
+            >
+            <span class="self-center"
+              ><img src="./images/icon-ellipsis.svg" alt=""
+            /></span>
+          </div>
+          <div class="flex flex-row justify-between">
+            <span class="text-[32px] font-normal leading-normal text-white"
+              >32hrs</span
+            >
+            <span
+              class="text-PaleBlue self-center text-[15px] font-normal leading-normal"
+              >Previous - 36hrs</span
+            >
+          </div>
+        </div>
+      </div>
+
       <!-- daily -->
-      32hrs
+
       <!-- weekly -->
-      Previous - 36hrs
+
       <!-- weekly -->
       103hrs
       <!-- monthly -->

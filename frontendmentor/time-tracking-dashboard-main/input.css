@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .work-card {
+    background: url('../images/icon-work.svg');
+    background-repeat: no-repeat;
+    background-position: 93% -10%;
+  }
+  .play-card {
+    background: url('../images/icon-play.svg');
+    background-repeat: no-repeat;
+    background-position: 93% -4%;
+  }
+}
