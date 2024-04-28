@@ -1,18 +1,14 @@
 const grid = document.querySelector('.grid');
 var dataJson;
 
-// Fetch the JSON file
 fetch('data.json')
   .then(response => {
-    // Check if the response is ok
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
-    // Parse the JSON response
     return response.json();
   })
   .then(data => {
-    // Now 'data' contains your parsed JSON data
     dataJson = data;
     console.log(data);
     dataJson.forEach(itm => {
@@ -21,11 +17,8 @@ fetch('data.json')
     });
   })
   .catch(error => {
-    // Handle any errors that occurred during the fetch
     console.error('Fetch error:', error);
   });
-
-// console.log(dataJson[0].timeframes.daily.current);
 
 function createBlock(time) {
   const cardBlock = `
@@ -44,11 +37,11 @@ function createBlock(time) {
     >
       <span
         class="text-[32px] font-light text-white lg:mt-6 lg:text-[56px]"
-        >${time.timeframes.daily.current}hrs</span
+        >${time.timeframes.daily.current}${time.timeframes.daily.previous ? 'hrs' : ''}</span
       >
       <span
         class="self-center text-[15px] font-normal text-PaleBlue md:self-start lg:mt-2"
-        >Previous - ${time.timeframes.daily.previous}hrs</span
+        >Previous - ${time.timeframes.daily.previous}${time.timeframes.daily.previous ? 'hrs' : ''}</span
       >
     </div>
   </div>
