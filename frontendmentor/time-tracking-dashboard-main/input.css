@@ -42,3 +42,9 @@
     background-position: 93% -8%;
   }
 }
+
+@layer utilities {
+  .lineheightnormal {
+    line-height: normal;
+  }
+}
