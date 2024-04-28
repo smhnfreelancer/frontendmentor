@@ -23,7 +23,7 @@
     background-repeat: no-repeat;
     background-position: 93% -5%;
   }
-  .excercise-card {
+  .exercise-card {
     @apply bg-LimeGreenExercise;
     background-image: url('../images/icon-exercise.svg');
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@
     background-repeat: no-repeat;
     background-position: 93% -15%;
   }
-  .selfcare-card {
+  .self_care-card {
     @apply bg-SoftOrangeSelfcare;
     background-image: url('../images/icon-self-care.svg');
     background-repeat: no-repeat;

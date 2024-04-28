@@ -578,7 +578,7 @@ video {
   background-position: 93% -5%;
 }
 
-.excercise-card {
+.exercise-card {
   --tw-bg-opacity: 1;
   background-color: hsl(145 58% 55% / var(--tw-bg-opacity));
   background-image: url('../images/icon-exercise.svg');
@@ -594,7 +594,7 @@ video {
   background-position: 93% -15%;
 }
 
-.selfcare-card {
+.self_care-card {
   --tw-bg-opacity: 1;
   background-color: hsl(43 84% 65% / var(--tw-bg-opacity));
   background-image: url('../images/icon-self-care.svg');
@@ -676,18 +676,8 @@ video {
   justify-content: space-between;
 }
 
-.justify-around {
-  justify-content: space-around;
-}
-
 .gap-6 {
   gap: 1.5rem;
-}
-
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
 .self-center {
@@ -787,14 +777,14 @@ video {
   font-size: 32px;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-light {
@@ -803,10 +793,6 @@ video {
 
 .font-normal {
   font-weight: 400;
-}
-
-.leading-normal {
-  line-height: 1.5;
 }
 
 .text-Blue {
@@ -880,50 +866,32 @@ video {
 }
 
 @media (min-width: 976px) {
+  .lg\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
-  }
-
-  .lg\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-  .lg\:mt-\[30vh\] {
-    margin-top: 30vh;
-  }
-
-  .lg\:mt-\[35vh\] {
-    margin-top: 35vh;
-  }
-
-  .lg\:mt-6 {
-    margin-top: 1.5rem;
-  }
-
-  .lg\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
-  .lg\:mt-\[26vh\] {
-    margin-top: 26vh;
   }
 
   .lg\:mt-11 {
     margin-top: 2.75rem;
   }
 
-  .lg\:mb-12 {
-    margin-bottom: 3rem;
+  .lg\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .lg\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .lg\:max-w-\[1120px\] {
     max-width: 1120px;
-  }
-
-  .lg\:space-y-5 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
   }
 
   .lg\:px-7 {
@@ -936,11 +904,11 @@ video {
     padding-bottom: 1.75rem;
   }
 
-  .lg\:text-\[56px\] {
-    font-size: 56px;
-  }
-
   .lg\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .lg\:text-\[56px\] {
+    font-size: 56px;
   }
 }
