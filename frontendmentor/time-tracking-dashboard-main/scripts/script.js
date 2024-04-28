@@ -37,7 +37,7 @@ function createBlock(time) {
     >
       <span
         class="text-[32px] font-light text-white lg:mt-6 lg:text-[56px]"
-        >${time.timeframes.daily.current}${time.timeframes.daily.previous ? 'hrs' : ''}</span
+        >${time.timeframes.daily.current}${time.timeframes.daily.current ? 'hrs' : ''}</span
       >
       <span
         class="self-center text-[15px] font-normal text-PaleBlue md:self-start lg:mt-2"
