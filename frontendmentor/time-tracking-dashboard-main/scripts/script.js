@@ -8,43 +8,44 @@ const LI = document.querySelectorAll('li');
 var dataJson;
 
 async function dailyLoading() {
-  await removeActiveLink();
-  await fetchData();
-  await removeCards();
-  await createDailyBlock();
+  console.log('Daily Run');
+  removeActiveLink();
+  dataJson = await fetchData();
+  removeCards();
+  createDailyBlock();
 }
 
 async function weeklyLoading() {
-  await removeActiveLink();
-  await fetchData();
-  await removeCards();
-  await createWeeklyBlock();
+  removeActiveLink();
+  dataJson = await fetchData();
+  removeCards();
+  createWeeklyBlock();
 }
 
-async function removeActiveLink() {
-LI.forEach(li => {
-  li.classList.remove('text-white')
-})
+function removeActiveLink() {
+  LI.forEach(li => {
+    li.classList.remove('text-white');
+  });
 }
 
-async function removeCards() {
-cards.forEach(card => {
-  card.remove();
-})
+function removeCards() {
+  cards.forEach(card => {
+    card.remove();
+  });
 }
 
 async function fetchData() {
   const response = await fetch('data.json');
 
   data = await response.json();
-    dataJson = data;
-  console.log(dataJson);
+  console.log(data);
+  return data;
 }
 
-async function createDailyBlock() {
+function createDailyBlock() {
   daily.classList.add('text-white');
   dataJson.forEach(element => {
-  const cardBlock = `
+    const cardBlock = `
 <div class="${element.title.toLowerCase().replace(/ /g, '_')}-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-10 md:max-w-[255px] card">
   <div
     class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 lg:px-7 lg:py-7"
@@ -70,14 +71,14 @@ async function createDailyBlock() {
   </div>
 </div>
 `;
-  grid.innerHTML += cardBlock;
+    grid.innerHTML += cardBlock;
   });
 }
 
-async function createWeeklyBlock() {
+function createWeeklyBlock() {
   weekly.classList.add('text-white');
   dataJson.forEach(element => {
-  const cardBlock = `
+    const cardBlock = `
 <div class="${element.title.toLowerCase().replace(/ /g, '_')}-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-10 md:max-w-[255px] card">
   <div
     class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 lg:px-7 lg:py-7"
@@ -103,10 +104,26 @@ async function createWeeklyBlock() {
   </div>
 </div>
 `;
-  grid.innerHTML += cardBlock;
+    grid.innerHTML += cardBlock;
   });
 }
 
-daily.addEventListener('click', dailyLoading);
-weekly.addEventListener('click', weeklyLoading);
-document.addEventListener('DOMContentLoaded',weeklyLoading)
+function consoleLog() {
+  console.log('test');
+}
+
+daily.addEventListener(
+  'click',
+  async () => {
+    dailyLoading().then(console.log('daily'));
+  },
+  false,
+);
+weekly.addEventListener(
+  'click',
+  async () => {
+    weeklyLoading().then(console.log('weekly'));
+  },
+  false,
+);
+// document.addEventListener('DOMContentLoaded', dailyLoading);
