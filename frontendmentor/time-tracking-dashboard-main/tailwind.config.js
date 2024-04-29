@@ -9,7 +9,6 @@ module.exports = {
     'exercise-card',
     'social-card',
     'self_care-card',
-    1,
   ],
   theme: {
     extend: {
