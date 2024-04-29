@@ -1,24 +1,29 @@
 const grid = document.querySelector('.grid');
 var dataJson;
 
-fetch('data.json')
-  .then(response => {
+async function fetchData() {
+  try {
+    // Fetch the JSON file
+    const response = await fetch('data.json');
+
+    // Check if the response is ok
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
-    return response.json();
-  })
-  .then(data => {
-    dataJson = data;
+
+    // Parse the JSON response
+    const data = await response.json();
+
+    // Now 'data' contains your parsed JSON data
     console.log(data);
-    dataJson.forEach(itm => {
-      itm.toLowercase;
-      createBlock(itm);
-    });
-  })
-  .catch(error => {
+  } catch (error) {
+    // Handle any errors that occurred during the fetch
     console.error('Fetch error:', error);
-  });
+  }
+}
+
+// Call the function to fetch the data
+fetchData();
 
 function createBlock(time) {
   const cardBlock = `
