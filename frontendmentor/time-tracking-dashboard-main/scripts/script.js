@@ -1,8 +1,9 @@
 const grid = document.querySelector('.grid');
+const subgrid = document.querySelector('.grid-cols-subgrid');
 const daily = document.getElementById('daily');
 const weekly = document.getElementById('weekly');
 const monthly = document.getElementById('monthly');
-const cards = document.querySelectorAll('.card');
+const cards = subgrid.querySelectorAll('.card');
 const LI = document.querySelectorAll('li');
 
 var dataJson;
@@ -83,6 +84,7 @@ function fetchData() {
 
 function createDailyBlock() {
   daily.classList.add('text-white');
+  subgrid.innerHTML = '';
   console.log(dataJson);
   dataJson.forEach(element => {
     const cardBlock = `
@@ -105,12 +107,13 @@ function createDailyBlock() {
   </div>
 </div>
 `;
-    grid.innerHTML += cardBlock;
+    subgrid.innerHTML += cardBlock;
   });
 }
 
 function createWeeklyBlock() {
   weekly.classList.add('text-white');
+  subgrid.innerHTML = '';
   console.log(dataJson);
   dataJson.forEach(element => {
     const cardBlock = `
@@ -135,12 +138,13 @@ function createWeeklyBlock() {
   </div>
 </div>
 `;
-    grid.innerHTML += cardBlock;
+    subgrid.innerHTML += cardBlock;
   });
 }
 
 function createMonthlyBlock() {
   monthly.classList.add('text-white');
+  subgrid.innerHTML = '';
   console.log(dataJson);
   dataJson.forEach(element => {
     const cardBlock = `
@@ -165,7 +169,7 @@ function createMonthlyBlock() {
   </div>
 </div>
 `;
-    grid.innerHTML += cardBlock;
+    subgrid.innerHTML += cardBlock;
   });
 }
 
