@@ -155,7 +155,7 @@ function init() {
   daily.addEventListener('click', dailyLoading);
   weekly.addEventListener('click', weeklyLoading);
   monthly.addEventListener('click', monthlyLoading);
-  dailyLoading();
+  weeklyLoading();
 }
 
 document.addEventListener('DOMContentLoaded', init, false);
