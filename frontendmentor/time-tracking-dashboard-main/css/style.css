@@ -814,6 +814,10 @@ video {
   font-weight: 400;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .text-Blue {
   --tw-text-opacity: 1;
   color: hsl(246 80% 60% / var(--tw-text-opacity));

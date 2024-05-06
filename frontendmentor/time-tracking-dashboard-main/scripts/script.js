@@ -55,7 +55,7 @@ function createDailyBlock() {
                 <div class="${element.title.toLowerCase().replace(/ /g, '_')}-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-11 md:max-w-[255px] card">
                   <div class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 lg:px-7 lg:py-7">
                     <div class="flex flex-row justify-between">
-                      <span class="text-[18px] font-normal text-white">${element.title}</span>
+                      <span class="text-[18px] font-medium text-white">${element.title}</span>
                       <span class="self-center">
                         <img src="./images/icon-ellipsis.svg" alt=""/>
                       </span>
@@ -89,7 +89,7 @@ function createWeeklyBlock() {
                 <div class="${element.title.toLowerCase().replace(/ /g, '_')}-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-11 md:max-w-[255px] card">
                   <div class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 lg:px-7 lg:py-7">
                     <div class="flex flex-row justify-between">
-                      <span class="text-[18px] font-normal text-white">
+                      <span class="text-[18px] font-medium text-white">
                         ${element.title}
                       </span>
                       <span class="self-center">
@@ -125,7 +125,7 @@ function createMonthlyBlock() {
                 <div class="${element.title.toLowerCase().replace(/ /g, '_')}-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-11 md:max-w-[255px] card">
                   <div class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 lg:px-7 lg:py-7">
                     <div class="flex flex-row justify-between">
-                      <span class="text-[18px] font-normal text-white">
+                      <span class="text-[18px] font-medium text-white">
                         ${element.title}
                       </span>
                       <span class="self-center">
