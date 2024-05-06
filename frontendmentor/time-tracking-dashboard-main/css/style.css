@@ -871,6 +871,10 @@ video {
     margin-top: 28vh;
   }
 
+  .md\:mt-\[25vh\] {
+    margin-top: 25vh;
+  }
+
   .md\:h-20 {
     height: 5rem;
   }
