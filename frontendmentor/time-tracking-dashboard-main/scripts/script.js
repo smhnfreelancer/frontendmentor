@@ -53,7 +53,7 @@ function createDailyBlock() {
       data.forEach(element => {
         const cardBlock = `
                 <div class="${element.title.toLowerCase().replace(/ /g, '_')}-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-11 md:max-w-[255px] card">
-                  <div class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 lg:px-7 lg:py-7">
+                  <div class="hover:bg-cardHover h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 hover:cursor-pointer lg:px-7 lg:py-7">
                     <div class="flex flex-row justify-between">
                       <span class="text-[18px] font-medium text-white">${element.title}</span>
                       <span class="self-center">
@@ -87,7 +87,7 @@ function createWeeklyBlock() {
       data.forEach(element => {
         const cardBlock = `
                 <div class="${element.title.toLowerCase().replace(/ /g, '_')}-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-11 md:max-w-[255px] card">
-                  <div class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 lg:px-7 lg:py-7">
+                  <div class="hover:bg-cardHover h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 hover:cursor-pointer lg:px-7 lg:py-7">
                     <div class="flex flex-row justify-between">
                       <span class="text-[18px] font-medium text-white">
                         ${element.title}
@@ -123,7 +123,7 @@ function createMonthlyBlock() {
       data.forEach(element => {
         const cardBlock = `
                 <div class="${element.title.toLowerCase().replace(/ /g, '_')}-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-11 md:max-w-[255px] card">
-                  <div class="h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 lg:px-7 lg:py-7">
+                  <div class="hover:bg-cardHover h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 hover:cursor-pointer lg:px-7 lg:py-7">
                     <div class="flex flex-row justify-between">
                       <span class="text-[18px] font-medium text-white">
                         ${element.title}

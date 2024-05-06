@@ -9,8 +9,7 @@ module.exports = {
     'exercise-card',
     'social-card',
     'self_care-card',
-    'col-span-3',
-    'grid-cols-subgrid',
+    'cardHover',
   ],
   theme: {
     extend: {
@@ -35,6 +34,7 @@ module.exports = {
         DarkBlue: 'hsl(235, 46%, 20%)',
         DesaturatedBlue: 'hsl(235, 45%, 61%)',
         PaleBlue: 'hsl(236, 100%, 87%)',
+        cardHover: 'hsla(236, 41%, 34%, 1)',
       },
     },
   },

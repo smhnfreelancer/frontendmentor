@@ -605,10 +605,6 @@ video {
   background-position: 93% -8%;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -810,12 +806,12 @@ video {
   font-weight: 300;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .font-medium {
   font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .text-Blue {
@@ -857,6 +853,14 @@ video {
   line-height: normal;
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hover\:bg-cardHover:hover {
+  background-color: hsla(236, 41%, 34%, 1);
+}
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -865,14 +869,6 @@ video {
 @media (min-width: 768px) {
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
-  }
-
-  .md\:mt-\[27vh\] {
-    margin-top: 27vh;
-  }
-
-  .md\:mt-\[28vh\] {
-    margin-top: 28vh;
   }
 
   .md\:mt-\[25vh\] {
@@ -937,10 +933,6 @@ video {
 
   .lg\:mt-5 {
     margin-top: 1.25rem;
-  }
-
-  .lg\:mt-6 {
-    margin-top: 1.5rem;
   }
 
   .lg\:max-w-\[1120px\] {
