@@ -61,7 +61,7 @@ function createDailyBlock() {
                       </span>
                     </div>
                     <div class="mt-2 flex flex-row flex-wrap justify-between md:flex-col md:justify-start">
-                      <span class="text-[32px] font-light text-white lg:mt-6 lg:text-[56px]" >
+                      <span class="text-[32px] font-light text-white lg:mt-5 lg:text-[56px]" >
                       ${element.timeframes.daily.current}${element.timeframes.daily.current ? 'hrs' : ''}
                       </span>
                       <span class="self-center text-[15px] font-normal text-PaleBlue md:self-start lg:mt-2">
@@ -97,7 +97,7 @@ function createWeeklyBlock() {
                       </span>
                     </div>
                     <div class="mt-2 flex flex-row flex-wrap justify-between md:flex-col md:justify-start">
-                      <span class="text-[32px] font-light text-white lg:mt-6 lg:text-[56px]">
+                      <span class="text-[32px] font-light text-white lg:mt-5 lg:text-[56px]">
                         ${element.timeframes.weekly.current}${element.timeframes.weekly.current ? 'hrs' : ''}
                       </span>
                       <span class="self-center text-[15px] font-normal text-PaleBlue md:self-start lg:mt-2">
@@ -133,7 +133,7 @@ function createMonthlyBlock() {
                       </span>
                     </div>
                     <div class="mt-2 flex flex-row flex-wrap justify-between md:flex-col md:justify-start">
-                      <span class="text-[32px] font-light text-white lg:mt-6 lg:text-[56px]">
+                      <span class="text-[32px] font-light text-white lg:mt-5 lg:text-[56px]">
                         ${element.timeframes.monthly.current}${element.timeframes.monthly.current ? 'hrs' : ''}
                       </span>
                       <span class="self-center text-[15px] font-normal text-PaleBlue md:self-start lg:mt-2">
