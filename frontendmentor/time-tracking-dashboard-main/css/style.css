@@ -699,14 +699,6 @@ video {
   gap: 1.5rem;
 }
 
-.gap-7 {
-  gap: 1.75rem;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
 .self-center {
   align-self: center;
 }
@@ -774,10 +766,6 @@ video {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
-}
-
-.pt-10 {
-  padding-top: 2.5rem;
 }
 
 .pt-11 {
@@ -875,12 +863,12 @@ video {
     grid-column: span 3 / span 3;
   }
 
-  .md\:row-span-2 {
-    grid-row: span 2 / span 2;
+  .md\:mt-\[27vh\] {
+    margin-top: 27vh;
   }
 
-  .md\:mt-\[26vh\] {
-    margin-top: 26vh;
+  .md\:mt-\[28vh\] {
+    margin-top: 28vh;
   }
 
   .md\:h-20 {
