@@ -44,33 +44,41 @@ function fetchData() {
       })
   );
 }
+function createTimeframeBlock(timeframe) {
+  // Remove 'active' state from all links
+  removeActiveLink();
 
-function createDailyBlock() {
-  daily.classList.add('text-white');
+  // Add 'active' class to the selected link
+  const timeframeElement = document.getElementById(timeframe);
+  timeframeElement.classList.add('text-white');
+
+  // Clear existing content
   subgrid.innerHTML = '';
+
+  // Fetch data and create blocks dynamically
   fetchData().then(data => {
     if (data !== null) {
       data.forEach(element => {
         const cardBlock = `
-                <div class="${element.title.toLowerCase().replace(/ /g, '_')}-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-11 md:max-w-[255px] card">
-                  <div class="hover:bg-cardHover h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 hover:cursor-pointer lg:px-7 lg:py-7">
-                    <div class="flex flex-row justify-between">
-                      <span class="text-[18px] font-medium text-white">${element.title}</span>
-                      <span class="self-center">
-                        <img src="./images/icon-ellipsis.svg" alt=""/>
-                      </span>
-                    </div>
-                    <div class="mt-2 flex flex-row flex-wrap justify-between md:flex-col md:justify-start">
-                      <span class="text-[32px] font-light text-white lg:mt-5 lg:text-[56px]" >
-                      ${element.timeframes.daily.current}${element.timeframes.daily.current ? 'hrs' : ''}
-                      </span>
-                      <span class="self-center text-[15px] font-normal text-PaleBlue md:self-start lg:mt-2">
-                        Last day - ${element.timeframes.daily.previous}${element.timeframes.daily.previous ? 'hrs' : ''}
-                        </span>
-                    </div>
-                  </div>
-                </div>
-`;
+          <div class="${element.title.toLowerCase().replace(/ /g, '_')}-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-11 md:max-w-[255px] card">
+            <div class="hover:bg-cardHover h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 hover:cursor-pointer lg:px-7 lg:py-7">
+              <div class="flex flex-row justify-between">
+                <span class="text-[18px] font-medium text-white">${element.title}</span>
+                <span class="self-center">
+                  <img src="./images/icon-ellipsis.svg" alt=""/>
+                </span>
+              </div>
+              <div class="mt-2 flex flex-row flex-wrap justify-between md:flex-col md:justify-start">
+                <span class="text-[32px] font-light text-white lg:mt-5 lg:text-[56px]">
+                  ${element.timeframes[timeframe].current || 0}hrs
+                </span>
+                <span class="self-center text-[15px] font-normal text-PaleBlue md:self-start lg:mt-2">
+                  Last ${timeframe === 'daily' ? 'day' : timeframe === 'weekly' ? 'week' : 'month'} - ${element.timeframes[timeframe].previous || 0}hrs
+                </span>
+              </div>
+            </div>
+          </div>
+        `;
         subgrid.innerHTML += cardBlock;
       });
     } else {
@@ -79,83 +87,15 @@ function createDailyBlock() {
   });
 }
 
-function createWeeklyBlock() {
-  weekly.classList.add('text-white');
-  subgrid.innerHTML = '';
-  fetchData().then(data => {
-    if (data !== null) {
-      data.forEach(element => {
-        const cardBlock = `
-                <div class="${element.title.toLowerCase().replace(/ /g, '_')}-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-11 md:max-w-[255px] card">
-                  <div class="hover:bg-cardHover h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 hover:cursor-pointer lg:px-7 lg:py-7">
-                    <div class="flex flex-row justify-between">
-                      <span class="text-[18px] font-medium text-white">
-                        ${element.title}
-                      </span>
-                      <span class="self-center">
-                        <img src="./images/icon-ellipsis.svg" alt=""/>
-                      </span>
-                    </div>
-                    <div class="mt-2 flex flex-row flex-wrap justify-between md:flex-col md:justify-start">
-                      <span class="text-[32px] font-light text-white lg:mt-5 lg:text-[56px]">
-                        ${element.timeframes.weekly.current}${element.timeframes.weekly.current ? 'hrs' : ''}
-                      </span>
-                      <span class="self-center text-[15px] font-normal text-PaleBlue md:self-start lg:mt-2">
-                        Last week - ${element.timeframes.weekly.previous}${element.timeframes.weekly.previous ? 'hrs' : ''}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-`;
-        subgrid.innerHTML += cardBlock;
-      });
-    } else {
-      console.log('Data could not be fetched');
-    }
-  });
-}
-
-function createMonthlyBlock() {
-  monthly.classList.add('text-white');
-  subgrid.innerHTML = '';
-  fetchData().then(data => {
-    if (data !== null) {
-      data.forEach(element => {
-        const cardBlock = `
-                <div class="${element.title.toLowerCase().replace(/ /g, '_')}-card max-w-[327px] rounded-b-[20px] rounded-t-[15px] pt-11 md:max-w-[255px] card">
-                  <div class="hover:bg-cardHover h-full rounded-[15px] rounded-b-[13px] bg-DarkBlue px-6 py-9 hover:cursor-pointer lg:px-7 lg:py-7">
-                    <div class="flex flex-row justify-between">
-                      <span class="text-[18px] font-medium text-white">
-                        ${element.title}
-                      </span>
-                      <span class="self-center">
-                        <img src="./images/icon-ellipsis.svg" alt=""/>
-                      </span>
-                    </div>
-                    <div class="mt-2 flex flex-row flex-wrap justify-between md:flex-col md:justify-start">
-                      <span class="text-[32px] font-light text-white lg:mt-5 lg:text-[56px]">
-                        ${element.timeframes.monthly.current}${element.timeframes.monthly.current ? 'hrs' : ''}
-                      </span>
-                      <span class="self-center text-[15px] font-normal text-PaleBlue md:self-start lg:mt-2">
-                        Last month - ${element.timeframes.monthly.previous}${element.timeframes.monthly.previous ? 'hrs' : ''}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-`;
-        subgrid.innerHTML += cardBlock;
-      });
-    } else {
-      console.log('Data could not be fetched');
-    }
-  });
-}
 
 function init() {
-  daily.addEventListener('click', dailyLoading);
-  weekly.addEventListener('click', weeklyLoading);
-  monthly.addEventListener('click', monthlyLoading);
-  weeklyLoading();
+  daily.addEventListener('click', () => createTimeframeBlock('daily'));
+  weekly.addEventListener('click', () => createTimeframeBlock('weekly'));
+  monthly.addEventListener('click', () => createTimeframeBlock('monthly'));
+  
+  // Default to weekly
+  createTimeframeBlock('weekly');
 }
+
 
 document.addEventListener('DOMContentLoaded', init, false);
