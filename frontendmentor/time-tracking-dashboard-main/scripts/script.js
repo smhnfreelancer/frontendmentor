@@ -114,31 +114,24 @@ async function createTimeframeBlock(timeframe) {
 
 
 function init() {
-  daily.addEventListener('click', async () => {
-    try {
-      await createTimeframeBlock('daily');
-    } catch (error) {
-      console.error('Error loading daily data:', error);
+  const timeframeContainer = document.querySelector('ul'); // Parent of the timeframe buttons
+
+  timeframeContainer.addEventListener('click', async (event) => {
+    const clickedElement = event.target;
+  
+    // Check if a valid timeframe button was clicked
+    const timeframe = clickedElement.dataset.timeframe;
+    if (timeframe) {
+      try {
+        await createTimeframeBlock(timeframe);
+      } catch (error) {
+        console.error(`Error loading ${timeframe} data:`, error);
+      }
     }
   });
+  
 
-  weekly.addEventListener('click', async () => {
-    try {
-      await createTimeframeBlock('weekly');
-    } catch (error) {
-      console.error('Error loading weekly data:', error);
-    }
-  });
-
-  monthly.addEventListener('click', async () => {
-    try {
-      await createTimeframeBlock('monthly');
-    } catch (error) {
-      console.error('Error loading monthly data:', error);
-    }
-  });
-
-  // Load the default timeframe (weekly) on page load
+  // Default load
   (async () => {
     try {
       await createTimeframeBlock('weekly');
